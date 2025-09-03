@@ -1,0 +1,234 @@
+<html>
+  <body id="body">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@700&family=Gowun+Dodum&family=Hi+Melody&family=Nanum+Brush+Script&family=Nanum+Gothic:wght@800&family=Nanum+Myeongjo:wght@800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@900&family=Single+Day&family=Stylish&family=Codystar&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25rem;
+        font-family: 'Stylish', 'Staatliches', sans-serif;
+        background: #000000;
+        background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+      }
+      .sign {
+        color: #ffe6ff;
+        text-align: center;
+        line-height: inherit;
+
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+          -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+          0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+        animation: shine 2s forwards, flicker 3s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        22%,
+        36%,
+        75% {
+          color: #ffe6ff;
+          text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+        }
+        28%,
+        33% {
+          color: #ff65bd;
+          text-shadow: none;
+        }
+        82%,
+        97% {
+          color: #ff2483;
+          text-shadow: none;
+        }
+      }
+
+      .flicker {
+        animation: shine 1s forwards, blink 3s 2s infinite;
+      }
+
+      .fast-flicker {
+        animation: shine 1s forwards, blink 10s 1s infinite;
+      }
+
+      @keyframes shine {
+        0% {
+          color: #6b1839;
+          text-shadow: none;
+        }
+        100% {
+          color: #ffe6ff;
+          text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+        }
+      }
+
+      @keyframes flicker {
+        from {
+          opacity: 1;
+        }
+
+        4% {
+          opacity: 0.9;
+        }
+
+        6% {
+          opacity: 0.85;
+        }
+
+        8% {
+          opacity: 0.95;
+        }
+
+        10% {
+          opacity: 0.9;
+        }
+
+        11% {
+          opacity: 0.922;
+        }
+
+        12% {
+          opacity: 0.9;
+        }
+
+        14% {
+          opacity: 0.95;
+        }
+
+        16% {
+          opacity: 0.98;
+        }
+
+        17% {
+          opacity: 0.9;
+        }
+
+        19% {
+          opacity: 0.93;
+        }
+
+        20% {
+          opacity: 0.99;
+        }
+
+        24% {
+          opacity: 1;
+        }
+
+        26% {
+          opacity: 0.94;
+        }
+
+        28% {
+          opacity: 0.98;
+        }
+
+        37% {
+          opacity: 0.93;
+        }
+
+        38% {
+          opacity: 0.5;
+        }
+
+        39% {
+          opacity: 0.96;
+        }
+
+        42% {
+          opacity: 1;
+        }
+
+        44% {
+          opacity: 0.97;
+        }
+
+        46% {
+          opacity: 0.94;
+        }
+
+        56% {
+          opacity: 0.9;
+        }
+
+        58% {
+          opacity: 0.9;
+        }
+
+        60% {
+          opacity: 0.99;
+        }
+
+        68% {
+          opacity: 1;
+        }
+
+        70% {
+          opacity: 0.9;
+        }
+
+        72% {
+          opacity: 0.95;
+        }
+
+        93% {
+          opacity: 0.93;
+        }
+
+        95% {
+          opacity: 0.95;
+        }
+
+        97% {
+          opacity: 0.93;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/nosleep/0.12.0/NoSleep.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <div class="sign" id="fittext"><span class="fast-flicker">순</span>종</div>
+    <script>
+      const texts = [
+        `<span class="fast-flicker">함</span>께`,
+        `<span class="fast-flicker">순</span>종`,
+        `<span class="fast-flicker">헌</span>신`,
+      ]
+      let index = 0
+
+      $('#fittext').fitText(0.5, { minFontSize: '400px', maxFontSize: '800px' })
+      var noSleep = new NoSleep()
+      $(document).click(function () {
+        noSleep.enable()
+      })
+
+      setInterval(function () {
+        document.getElementById('fittext').innerHTML = texts[index++ % 3]
+      }, 5000)
+    </script>
+  </body>
+</html>
